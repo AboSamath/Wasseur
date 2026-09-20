@@ -12,19 +12,22 @@
       color: #222;
     }
     header {
-      position: relative;
-      text-align: center;
-      color: white;
-      padding: 4rem 2rem;
-      background: url('back.jpeg') no-repeat center center;
-      background-size: cover;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5); /* filtre sombre pour lisibilité */
-    }
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 4rem 2rem;
+  background-color: #2f2f2f; /* gris foncé */
+  background-image: url('kiosque.jpeg'), url('backgr.jpeg');
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 45%, 45%;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4); /* léger voile pour lisibilité */
+}
     header h1, header p {
       position: relative;
       z-index: 1;
