@@ -6,27 +6,47 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #fbeec1, #f5c469);
       margin: 0;
       padding: 0;
+      background: #fff8f0;
       color: #222;
     }
     header {
-      background: #d35400;
-      color: white;
+      position: relative;
       text-align: center;
-      padding: 2rem;
-      animation: fadeInDown 2s ease;
+      color: white;
+      padding: 4rem 2rem;
+      background: url('kiosque.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* filtre sombre pour lisibilité */
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
     }
     h1 {
-      margin: 0;
       font-size: 2.5rem;
       text-transform: uppercase;
       letter-spacing: 2px;
+      color: #f39c12;
     }
-    section {
-      padding: 2rem;
-      animation: fadeInUp 2s ease;
+    .category {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #27ae60;
+      text-transform: uppercase;
+      font-weight: bold;
     }
     table {
       width: 100%;
@@ -40,13 +60,6 @@
     td:first-child {
       font-weight: bold;
     }
-    .category {
-      font-size: 1.5rem;
-      margin-top: 2rem;
-      color: #d35400;
-      text-transform: uppercase;
-      animation: pulse 3s infinite;
-    }
     footer {
       background: #d35400;
       color: white;
@@ -54,24 +67,12 @@
       padding: 1rem;
       margin-top: 2rem;
     }
-    /* Animations */
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-50px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(50px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes pulse {
-      0% { color: #d35400; }
-      50% { color: #e67e22; }
-      100% { color: #d35400; }
-    }
   </style>
 </head>
 <body>
   <header>
+    <!-- Logo avec fond transparent -->
+    <img src="logo.png" alt="Logo Wasseur du Peuple">
     <h1>BIENVENUR CHEZ LE WASSEUR DU PEUPLE</h1>
     <p>Entrez dans l'univers du Wasseur du Peuple et découvrez ses créations uniques</p>
   </header>
