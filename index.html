@@ -13,25 +13,18 @@
     }
     header {
       position: relative;
-      height: 300px; /* hauteur du header */
+      height: 400px; /* hauteur du header */
       overflow: hidden;
       text-align: center;
       color: white;
-    }
-    header video {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+      background: url('header.png') no-repeat center center;
+      background-size: cover; /* l’image remplit tout le header */
     }
     header::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0,0,0,0.4); /* voile sombre pour lisibilité */
-      z-index: 0;
     }
     header h1, header p, header img {
       position: relative;
@@ -77,11 +70,8 @@
 </head>
 <body>
   <header>
-    <!-- Vidéo en arrière-plan -->
-    <video autoplay muted loop playsinline>
-      <source src="Header.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la vidéo HTML5.
-    </video>
+    <!-- Logo avec fond transparent -->
+    
   </header>
 
   <section>
