@@ -2,10 +2,111 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon PDF</title>
-  <meta http-equiv="refresh" content="0; url=Menu Septembre 26_1.pdf">
+  <title>Wasseur du Peuple</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #fbeec1, #f5c469);
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: #d35400;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      animation: fadeInDown 2s ease;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    section {
+      padding: 2rem;
+      animation: fadeInUp 2s ease;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    td {
+      border: 1px solid #ddd;
+      padding: 0.8rem;
+    }
+    td:first-child {
+      font-weight: bold;
+    }
+    .category {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #d35400;
+      text-transform: uppercase;
+      animation: pulse 3s infinite;
+    }
+    footer {
+      background: #d35400;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { color: #d35400; }
+      50% { color: #e67e22; }
+      100% { color: #d35400; }
+    }
+  </style>
 </head>
 <body>
-  <p>Redirection vers le PDF… <a href="Menu Septembre 26_1.pdf">Cliquez ici si ça ne marche pas</a></p>
+  <header>
+    <h1>BIENVENUR CHEZ LE WASSEUR DU PEUPLE</h1>
+    <p>Entrez dans l'univers du Wasseur du Peuple et découvrez ses créations uniques</p>
+  </header>
+
+  <section>
+    <div class="category">Nos Wass Chaud</div>
+    <table>
+      <tr><td>Wass Simple (+supp Gingembre)</td><td>350 (500)</td></tr>
+      <tr><td>Wass bouye</td><td>500</td></tr>
+      <tr><td>Wass Ananas (PM)</td><td>600 (300)</td></tr>
+      <tr><td>Wass Mentholé tropical (PM)</td><td>600 (300)</td></tr>
+    </table>
+
+    <div class="category">Nos Wass Cocktails Glacés Simples</div>
+    <table>
+      <tr><td>Grenadine (simple et consorts)</td><td>1 000</td></tr>
+      <tr><td>Degradé de Grenadine</td><td>1 000</td></tr>
+      <tr><td>Ananas</td><td>1 000</td></tr>
+      <tr><td>Modjito Wass glacé menthe</td><td>1 000</td></tr>
+    </table>
+
+    <div class="category">Nos Wass Cocktails Glacés Composés</div>
+    <table>
+      <tr><td>Passion ananas</td><td>2 000</td></tr>
+      <tr><td>Passion fraises</td><td>2 000</td></tr>
+      <tr><td>Maad Passion</td><td>2 000</td></tr>
+      <tr><td>Mangue passion</td><td>2 000</td></tr>
+      <tr><td>Fraise Mandarine</td><td>2 000</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>The Coffee Service : Café Touba 200fr // Café bourgeois // Chocolat chaud</p>
+    <p>Nos smoothies : Créations à base de wass Goût exclusif</p>
+    <p>Contact : 77 307 85 23</p>
+  </footer>
 </body>
 </html>
